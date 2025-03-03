@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -353,7 +353,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -369,6 +371,19 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-sistem-dengan-satu-solusi-unik"><strong>Contoh 1: Sistem dengan satu solusi unik</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss"><strong>Langkah-langkah eliminasi Gauss:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-sistem-dengan-solusi-tak-hingga"><strong>Contoh 2: Sistem dengan solusi tak hingga</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3-sistem-tanpa-solusi"><strong>Contoh 3: Sistem tanpa solusi</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -382,6 +397,135 @@ document.write(`
 <h1>Sistem Persamaan Linier<a class="headerlink" href="#sistem-persamaan-linier" title="Link to this heading">#</a></h1>
 <p>Pengertian Persamaan Linier Persamaan linier adalah persamaan yang menggambarkan hubungan antara variabel-variabel dengan perubahan yang bersifat tetap atau sebanding. Disebut “linier” karena jika digambarkan dalam grafik, bentuknya berupa garis lurus.</p>
 <p>Ciri-Ciri Persamaan Linier Hanya mengandung variabel dengan pangkat satu. Tidak ada perkalian antar variabel. Bentuknya sederhana dan mudah dihitung. Jika digambarkan, akan membentuk garis lurus. Contoh dalam Kehidupan Sehari-hari Menghitung harga total belanja, misalnya saat membeli beberapa barang dengan harga tetap. Menentukan jarak perjalanan, jika seseorang berkendara dengan kecepatan tetap selama beberapa waktu. Menghitung keuntungan bisnis, di mana total keuntungan bergantung pada jumlah barang yang terjual. Kesimpulan Persamaan linier adalah konsep dasar dalam matematika yang sering digunakan dalam kehidupan sehari-hari untuk berbagai perhitungan sederhana dan logis.</p>
+<hr class="docutils" />
+<p>title: TUGAS KAL</p>
+<hr class="docutils" />
+<p>Metode eliminasi Gauss digunakan untuk menyelesaikan sistem persamaan linear dalam tiga dimensi (3 variabel). Bergantung pada bentuk hasil akhirnya, sistem bisa memiliki:</p>
+<ol class="arabic simple">
+<li><p><strong>Satu solusi unik</strong> → Jika sistem memiliki solusi tunggal (tidak ada baris nol yang bertentangan).</p></li>
+<li><p><strong>Tak hingga banyak solusi</strong> → Jika ada variabel bebas dan baris nol tanpa pertentangan.</p></li>
+<li><p><strong>Tanpa solusi</strong> → Jika ada kontradiksi (misalnya, ( 0x + 0y + 0z = c ) dengan ( c \neq 0 )).</p></li>
+</ol>
+<hr class="docutils" />
+<section id="contoh-1-sistem-dengan-satu-solusi-unik">
+<h2><strong>Contoh 1: Sistem dengan satu solusi unik</strong><a class="headerlink" href="#contoh-1-sistem-dengan-satu-solusi-unik" title="Link to this heading">#</a></h2>
+<p>[
+\begin{aligned}
+x + y + z &amp;= 6 \
+2x - y + 3z &amp;= 14 \
+y + 2z &amp;= 8
+\end{aligned}
+]</p>
+<section id="langkah-langkah-eliminasi-gauss">
+<h3><strong>Langkah-langkah eliminasi Gauss:</strong><a class="headerlink" href="#langkah-langkah-eliminasi-gauss" title="Link to this heading">#</a></h3>
+<ol class="arabic">
+<li><p><strong>Bentuk matriks augmented:</strong>
+[
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+2 &amp; -1 &amp; 3 &amp; | 14 \
+0 &amp; 1 &amp; 2 &amp; | 8
+\end{bmatrix}
+]</p></li>
+<li><p><strong>Eliminasi</strong>: Buat elemen di bawah elemen utama pertama nol.</p>
+<ul class="simple">
+<li><p>Baris 2 dikurangi 2 kali Baris 1:
+R2-&gt;R2-2R1
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; -3 &amp; 1 &amp; | 2 \
+0 &amp; 1 &amp; 2 &amp; | 8
+\end{bmatrix}
+]</p></li>
+<li><p>Baris 3 tetap.</p></li>
+</ul>
+</li>
+<li><p><strong>Eliminasi lebih lanjut</strong>:</p>
+<ul>
+<li><p>Jumlahkan Baris 2 dan Baris 3 untuk menghilangkan ( y ).
+R3-&gt;R3+1/3R2</p>
+<p>\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 6 \
+0 &amp; -3 &amp; 1 &amp; | 2 \
+0 &amp; 0 &amp; \frac{7}{3} &amp; | \frac{26}{3}
+\end{bmatrix}
+]</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Backward Substitution</strong>:</p>
+<ul class="simple">
+<li><p>( z = 4 )</p></li>
+<li><p>( y + 2(4) = 8 ) → ( y = 0 )</p></li>
+<li><p>( x + 0 + 4 = 6 ) → ( x = 2 )</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Solusi unik:</strong> ( (2, 0, 4) ).</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="contoh-2-sistem-dengan-solusi-tak-hingga">
+<h2><strong>Contoh 2: Sistem dengan solusi tak hingga</strong><a class="headerlink" href="#contoh-2-sistem-dengan-solusi-tak-hingga" title="Link to this heading">#</a></h2>
+<p>[
+\begin{aligned}
+x + y + z &amp;= 5 \
+2x + 3y + z &amp;= 8 \
+3x + 4y + 2z &amp;= 13
+\end{aligned}
+]
+Bentuk matriks:
+[
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 5 \
+2 &amp; 3 &amp; 1 &amp; | 8 \
+3 &amp; 4 &amp; 2 &amp; | 13
+\end{bmatrix}
+]
+Eliminasi Gauss mengarah ke:
+[
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 5 \
+0 &amp; 1 &amp; -1 &amp; | 2 \
+0 &amp; 0 &amp; 0 &amp; | 0
+\end{bmatrix}
+]
+Variabel bebas: ( z = t ).<br />
+Dapatkan ekspresi parametris untuk ( x ) dan ( y ), solusi tak hingga.</p>
+<hr class="docutils" />
+</section>
+<section id="contoh-3-sistem-tanpa-solusi">
+<h2><strong>Contoh 3: Sistem tanpa solusi</strong><a class="headerlink" href="#contoh-3-sistem-tanpa-solusi" title="Link to this heading">#</a></h2>
+<p>[
+\begin{aligned}
+x + y + z &amp;= 3 \
+2x + 2y + 2z &amp;= 6 \
+x + y + z &amp;= 5
+\end{aligned}
+]
+Bentuk matriks:
+[
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 3 \
+2 &amp; 2 &amp; 2 &amp; | 6 \
+1 &amp; 1 &amp; 1 &amp; | 5
+\end{bmatrix}
+]
+Eliminasi menghasilkan baris:
+[
+\begin{bmatrix}
+1 &amp; 1 &amp; 1 &amp; | 3 \
+0 &amp; 0 &amp; 0 &amp; | 0 \
+0 &amp; 0 &amp; 0 &amp; | 2
+\end{bmatrix}
+]
+Baris terakhir ( 0 = 2 ) adalah kontradiksi → <strong>Tanpa solusi</strong>.</p>
+<hr class="docutils" />
+<p>Metode eliminasi Gauss sangat efektif dalam menentukan jumlah solusi dari sistem persamaan linear tiga dimensi! 🚀</p>
+<p>tanpa solusi <a class="reference external" href="https://www.geogebra.org/m/ukr7cbwz">https://www.geogebra.org/m/ukr7cbwz</a>
+satu solusi unik <a class="reference external" href="https://www.geogebra.org/m/nqc6mbbc">https://www.geogebra.org/m/nqc6mbbc</a>
+solusi tak hinggah <a class="reference external" href="https://www.geogebra.org/m/s8vaze8f">https://www.geogebra.org/m/s8vaze8f</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -438,6 +582,26 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-sistem-dengan-satu-solusi-unik"><strong>Contoh 1: Sistem dengan satu solusi unik</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss"><strong>Langkah-langkah eliminasi Gauss:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-sistem-dengan-solusi-tak-hingga"><strong>Contoh 2: Sistem dengan solusi tak hingga</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3-sistem-tanpa-solusi"><strong>Contoh 3: Sistem tanpa solusi</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
