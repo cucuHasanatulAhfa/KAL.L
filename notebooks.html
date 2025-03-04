@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -409,34 +411,30 @@ document.write(`
 <hr class="docutils" />
 <section id="contoh-1-sistem-dengan-satu-solusi-unik">
 <h2><strong>Contoh 1: Sistem dengan satu solusi unik</strong><a class="headerlink" href="#contoh-1-sistem-dengan-satu-solusi-unik" title="Link to this heading">#</a></h2>
-<p>[
-\begin{aligned}
-x + y + z &amp;= 6 \
-2x - y + 3z &amp;= 14 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+x + y + z &amp;= 6 \\
+2x - y + 3z &amp;= 14 \\
 y + 2z &amp;= 8
-\end{aligned}
-]</p>
+\end{aligned}\end{split}\]</div>
 <section id="langkah-langkah-eliminasi-gauss">
 <h3><strong>Langkah-langkah eliminasi Gauss:</strong><a class="headerlink" href="#langkah-langkah-eliminasi-gauss" title="Link to this heading">#</a></h3>
 <ol class="arabic">
 <li><p><strong>Bentuk matriks augmented:</strong>
-[
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-2 &amp; -1 &amp; 3 &amp; | 14 \
-0 &amp; 1 &amp; 2 &amp; | 8
-\end{bmatrix}
-]</p></li>
+$<span class="math notranslate nohighlight">\(\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+2 &amp; -1 &amp; 3 &amp; | 14 \\ 
+0 &amp; 1 &amp; 2 &amp; | 8 
+\end{bmatrix}\)</span>$</p></li>
 <li><p><strong>Eliminasi</strong>: Buat elemen di bawah elemen utama pertama nol.</p>
 <ul class="simple">
 <li><p>Baris 2 dikurangi 2 kali Baris 1:
 R2-&gt;R2-2R1
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; -3 &amp; 1 &amp; | 2 \
-0 &amp; 1 &amp; 2 &amp; | 8
-\end{bmatrix}
-]</p></li>
+$<span class="math notranslate nohighlight">\(\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+0 &amp; -3 &amp; 1 &amp; | 2 \\ 
+0 &amp; 1 &amp; 2 &amp; | 8 
+\end{bmatrix}\)</span>$</p></li>
 <li><p>Baris 3 tetap.</p></li>
 </ul>
 </li>
@@ -444,12 +442,12 @@ R2-&gt;R2-2R1
 <ul>
 <li><p>Jumlahkan Baris 2 dan Baris 3 untuk menghilangkan ( y ).
 R3-&gt;R3+1/3R2</p>
-<p>\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 6 \
-0 &amp; -3 &amp; 1 &amp; | 2 \
-0 &amp; 0 &amp; \frac{7}{3} &amp; | \frac{26}{3}
-\end{bmatrix}
-]</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+     1 &amp; 1 &amp; 1 &amp; | 6 \\ 
+     0 &amp; -3 &amp; 1 &amp; | 2 \\ 
+     0 &amp; 0 &amp; \frac{7}{3} &amp; | \frac{26}{3} 
+     \end{bmatrix}\end{split}\]</div>
 </li>
 </ul>
 </li>
@@ -462,64 +460,64 @@ R3-&gt;R3+1/3R2</p>
 </li>
 </ol>
 <p><strong>Solusi unik:</strong> ( (2, 0, 4) ).</p>
+<p>Gambar Geogebra:</p>
+ <iframe scrolling="no" title="satu solusi unik" src="https://www.geogebra.org/material/iframe/id/nqc6mbbc/width/1366/height/577/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="577px" style="border:0px;"> </iframe>
 <hr class="docutils" />
 </section>
 </section>
 <section id="contoh-2-sistem-dengan-solusi-tak-hingga">
 <h2><strong>Contoh 2: Sistem dengan solusi tak hingga</strong><a class="headerlink" href="#contoh-2-sistem-dengan-solusi-tak-hingga" title="Link to this heading">#</a></h2>
-<p>[
-\begin{aligned}
-x + y + z &amp;= 5 \
-2x + 3y + z &amp;= 8 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+x + y + z &amp;= 5 \\
+2x + 3y + z &amp;= 8 \\
 3x + 4y + 2z &amp;= 13
-\end{aligned}
-]
-Bentuk matriks:
-[
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 5 \
-2 &amp; 3 &amp; 1 &amp; | 8 \
-3 &amp; 4 &amp; 2 &amp; | 13
-\end{bmatrix}
-]
-Eliminasi Gauss mengarah ke:
-[
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 5 \
-0 &amp; 1 &amp; -1 &amp; | 2 \
-0 &amp; 0 &amp; 0 &amp; | 0
-\end{bmatrix}
-]
-Variabel bebas: ( z = t ).<br />
+\end{aligned}\end{split}\]</div>
+<p>Bentuk matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 5 \\ 
+2 &amp; 3 &amp; 1 &amp; | 8 \\ 
+3 &amp; 4 &amp; 2 &amp; | 13 
+\end{bmatrix}\end{split}\]</div>
+<p>Eliminasi Gauss mengarah ke:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 5 \\ 
+0 &amp; 1 &amp; -1 &amp; | 2 \\ 
+0 &amp; 0 &amp; 0 &amp; | 0 
+\end{bmatrix}\end{split}\]</div>
+<p>Variabel bebas: ( z = t ).<br />
 Dapatkan ekspresi parametris untuk ( x ) dan ( y ), solusi tak hingga.</p>
+<p>Gambar Geogebra:</p>
+<iframe scrolling="no" title="solusi tak hinggah" src="https://www.geogebra.org/material/iframe/id/s8vaze8f/width/1366/height/577/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="577px" style="border:0px;"> </iframe>
 <hr class="docutils" />
 </section>
 <section id="contoh-3-sistem-tanpa-solusi">
 <h2><strong>Contoh 3: Sistem tanpa solusi</strong><a class="headerlink" href="#contoh-3-sistem-tanpa-solusi" title="Link to this heading">#</a></h2>
-<p>[
-\begin{aligned}
-x + y + z &amp;= 3 \
-2x + 2y + 2z &amp;= 6 \
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned}
+x + y + z &amp;= 3 \\
+2x + 2y + 2z &amp;= 6 \\
 x + y + z &amp;= 5
-\end{aligned}
-]
-Bentuk matriks:
-[
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 3 \
-2 &amp; 2 &amp; 2 &amp; | 6 \
-1 &amp; 1 &amp; 1 &amp; | 5
-\end{bmatrix}
-]
-Eliminasi menghasilkan baris:
-[
-\begin{bmatrix}
-1 &amp; 1 &amp; 1 &amp; | 3 \
-0 &amp; 0 &amp; 0 &amp; | 0 \
-0 &amp; 0 &amp; 0 &amp; | 2
-\end{bmatrix}
-]
-Baris terakhir ( 0 = 2 ) adalah kontradiksi → <strong>Tanpa solusi</strong>.</p>
+\end{aligned}\end{split}\]</div>
+<p>Bentuk matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 3 \\ 
+2 &amp; 2 &amp; 2 &amp; | 6 \\ 
+1 &amp; 1 &amp; 1 &amp; | 5 
+\end{bmatrix}\end{split}\]</div>
+<p>Eliminasi menghasilkan baris:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{bmatrix} 
+1 &amp; 1 &amp; 1 &amp; | 3 \\ 
+0 &amp; 0 &amp; 0 &amp; | 0 \\ 
+0 &amp; 0 &amp; 0 &amp; | 2 
+\end{bmatrix}\end{split}\]</div>
+<p>Baris terakhir ( 0 = 2 ) adalah kontradiksi → <strong>Tanpa solusi</strong>.</p>
+<p>Gambar Geogebra:</p>
+<iframe scrolling="no" title="tanpa solusi" src="https://www.geogebra.org/material/iframe/id/j8rumbf8/width/1366/height/577/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="577px" style="border:0px;"> </iframe>
 <hr class="docutils" />
 <p>Metode eliminasi Gauss sangat efektif dalam menentukan jumlah solusi dari sistem persamaan linear tiga dimensi! 🚀</p>
 <p>tanpa solusi <a class="reference external" href="https://www.geogebra.org/m/ukr7cbwz">https://www.geogebra.org/m/ukr7cbwz</a>
