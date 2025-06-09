@@ -184,7 +184,6 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Sistem Persamaan Linier</a></li>
 
 
-
 </ul>
 
     </div>
@@ -388,12 +387,13 @@ document.write(`
 +
 2
 𝑧</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-sistem-dengan-satu-solusi-unik"><strong>Contoh 1: Sistem dengan satu solusi unik</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#title-tugas-kal">title: TUGAS KAL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-sistem-dengan-satu-solusi-unik"><strong>Contoh 1: Sistem dengan satu solusi unik</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss"><strong>Langkah-langkah eliminasi Gauss:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-sistem-dengan-solusi-tak-hingga"><strong>Contoh 2: Sistem dengan solusi tak hingga</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3-sistem-tanpa-solusi"><strong>Contoh 3: Sistem tanpa solusi</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-sistem-dengan-solusi-tak-hingga"><strong>Contoh 2: Sistem dengan solusi tak hingga</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3-sistem-tanpa-solusi"><strong>Contoh 3: Sistem tanpa solusi</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks-invers">Definisi matriks invers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-matriks-memiliki-invers">Syarat Matriks Memiliki Invers:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-invers-matriks">Cara Mencari Invers Matriks:</a></li>
@@ -407,45 +407,41 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-terhadap-bidang-kartesius">Transformasi terhadap bidang kartesius</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-transformasi-matriks-menggunnakan-vektor">Visualisasi Transformasi Matriks Menggunnakan vektor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-matriks-terhadap-sebuah-wilayah">Transformasi Matriks terhadap sebuah wilayah</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-grafik-transformasi-matriks">Penjelasan Grafik Transformasi Matriks</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-persegi-satuan">1. Transformasi Persegi Satuan</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-dan-visualisasi">2. Contoh Transformasi dan Visualisasi</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-grafik-transformasi-matriks">Penjelasan Grafik Transformasi Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-persegi-satuan">1. Transformasi Persegi Satuan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-dan-visualisasi">2. Contoh Transformasi dan Visualisasi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-bertahap-komposisi">Transformasi Bertahap (Komposisi)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inti-dari-visualisasi">Inti dari Visualisasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">-&gt; SOAL DAN JAWABAN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linier-diberikan-suatu-transformasi">1. Transformasi Linier Diberikan suatu transformasi.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dua-titik-matriks-reflenction">2.dua titik matriks reflenction.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">-&gt; SOAL DAN JAWABAN</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linier-diberikan-suatu-transformasi">1. Transformasi Linier Diberikan suatu transformasi.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dua-titik-matriks-reflenction">2.dua titik matriks reflenction.</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalues-eigenvector">- <strong>Eigenvalues Eigenvector</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">1. <strong>Definisi Eigenvalue dan Eigenvector</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvalue-dan-eigenvector">2. <strong>Cara Mencari Eigenvalue dan Eigenvector</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-temukan-eigenvalue-lambda"><strong>Langkah 1: Temukan Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span></strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-temukan-eigenvector"><strong>Langkah 2: Temukan Eigenvector</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal"><strong>Contoh Soal:</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvalue">Cari eigenvalue:</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvector-untuk-lambda-3">Cari eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalues-eigenvector">- Eigenvalues Eigenvector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">1. Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-temukan-eigenvector"><strong>Langkah 2: Temukan Eigenvector</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#menjadikan-eigenvector-ortonormal">Menjadikan Eigenvector Ortonormal:</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-tidak-orthogonal">Jika tidak orthogonal:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-ortonormal-dan-menjadikannya-satu-kesatuan">3. <strong>Eigenvector Ortonormal dan Menjadikannya Satu Kesatuan</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormal">Ortonormal:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menjadikan-eigenvector-ortonormal">Menjadikan Eigenvector Ortonormal:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-tidak-orthogonal">Jika tidak orthogonal:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3-x-3">- matriks 3 x 3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">-</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-silang">- perkalian silang</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3-x-3">- matriks 3 x 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">-</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#begin-pmatrix-1-cdot-0-0-cdot-1-0-cdot-0-0-cdot-0-0-cdot-1-1-cdot-0-end-pmatrix">$[
+\begin{pmatrix}
+1 \cdot 0 - 0 \cdot 1 \
+0 \cdot 0 - 0 \cdot 0 \
+0 \cdot 1 - 1 \cdot 0 \
+\end{pmatrix}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-jawaban">soal - jawaban</a></li>
 </ul>
 </li>
 </ul>
@@ -486,8 +482,8 @@ Metode Substitusi</p>
 2
 𝑧<a class="headerlink" href="#x-y-2-z" title="Link to this heading">#</a></h1>
 <p>1</p>
-<hr class="docutils" />
-<p>title: TUGAS KAL</p>
+<section id="title-tugas-kal">
+<h2>title: TUGAS KAL<a class="headerlink" href="#title-tugas-kal" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Metode eliminasi Gauss digunakan untuk menyelesaikan sistem persamaan linear dalam tiga dimensi (3 variabel). Bergantung pada bentuk hasil akhirnya, sistem bisa memiliki:</p>
 <ol class="arabic simple">
@@ -497,13 +493,14 @@ Metode Substitusi</p>
 </ol>
 <hr class="docutils" />
 <section id="contoh-1-sistem-dengan-satu-solusi-unik">
-<h2><strong>Contoh 1: Sistem dengan satu solusi unik</strong><a class="headerlink" href="#contoh-1-sistem-dengan-satu-solusi-unik" title="Link to this heading">#</a></h2>
+<h3><strong>Contoh 1: Sistem dengan satu solusi unik</strong><a class="headerlink" href="#contoh-1-sistem-dengan-satu-solusi-unik" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 x + y + z &amp;= 6 \\
 2x - y + 3z &amp;= 14 \\
 y + 2z &amp;= 8
 \end{aligned}\end{split}\]</div>
+</section>
 <section id="langkah-langkah-eliminasi-gauss">
 <h3><strong>Langkah-langkah eliminasi Gauss:</strong><a class="headerlink" href="#langkah-langkah-eliminasi-gauss" title="Link to this heading">#</a></h3>
 <ol class="arabic">
@@ -556,9 +553,8 @@ $<span class="math notranslate nohighlight">\(R3-&gt;R3+1/3R2\)</span>$</p>
  <iframe scrolling="no" title="satu solusi unik" src="https://www.geogebra.org/material/iframe/id/nqc6mbbc/width/1366/height/577/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="577px" style="border:0px;"> </iframe>
 <hr class="docutils" />
 </section>
-</section>
 <section id="contoh-2-sistem-dengan-solusi-tak-hingga">
-<h2><strong>Contoh 2: Sistem dengan solusi tak hingga</strong><a class="headerlink" href="#contoh-2-sistem-dengan-solusi-tak-hingga" title="Link to this heading">#</a></h2>
+<h3><strong>Contoh 2: Sistem dengan solusi tak hingga</strong><a class="headerlink" href="#contoh-2-sistem-dengan-solusi-tak-hingga" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 x + y + z &amp;= 5 \\
@@ -586,7 +582,7 @@ Dapatkan ekspresi parametris untuk ( x ) dan ( y ), solusi tak hingga.</p>
 <hr class="docutils" />
 </section>
 <section id="contoh-3-sistem-tanpa-solusi">
-<h2><strong>Contoh 3: Sistem tanpa solusi</strong><a class="headerlink" href="#contoh-3-sistem-tanpa-solusi" title="Link to this heading">#</a></h2>
+<h3><strong>Contoh 3: Sistem tanpa solusi</strong><a class="headerlink" href="#contoh-3-sistem-tanpa-solusi" title="Link to this heading">#</a></h3>
 <div class="math notranslate nohighlight">
 \[\begin{split}\begin{aligned}
 x + y + z &amp;= 3 \\
@@ -615,6 +611,7 @@ x + y + z &amp;= 5
 <p>tanpa solusi <a class="reference external" href="https://www.geogebra.org/m/ukr7cbwz">https://www.geogebra.org/m/ukr7cbwz</a>
 satu solusi unik <a class="reference external" href="https://www.geogebra.org/m/nqc6mbbc">https://www.geogebra.org/m/nqc6mbbc</a>
 solusi tak hinggah <a class="reference external" href="https://www.geogebra.org/m/s8vaze8f">https://www.geogebra.org/m/s8vaze8f</a></p>
+</section>
 </section>
 <section id="definisi-matriks-invers">
 <h2>Definisi matriks invers<a class="headerlink" href="#definisi-matriks-invers" title="Link to this heading">#</a></h2>
@@ -962,13 +959,14 @@ A = \begin{bmatrix}
 \end{bmatrix}
 \)</span></p>
 <p>Matriks ini merupakan rotasi 90 derajat berlawanan arah jarum jam terhadap titik asal (0,0) dalam bidang kartesius.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="penjelasan-grafik-transformasi-matriks">
 <h3>Penjelasan Grafik Transformasi Matriks<a class="headerlink" href="#penjelasan-grafik-transformasi-matriks" title="Link to this heading">#</a></h3>
 <p>Dalam bab ini, grafik digunakan untuk <em>mengilustrasikan efek transformasi matriks terhadap bentuk-bentuk geometri</em>, terutama <em>persegi satuan</em> (unit square) dan vektor.</p>
+</section>
 <section id="transformasi-persegi-satuan">
-<h4>1. Transformasi Persegi Satuan<a class="headerlink" href="#transformasi-persegi-satuan" title="Link to this heading">#</a></h4>
+<h3>1. Transformasi Persegi Satuan<a class="headerlink" href="#transformasi-persegi-satuan" title="Link to this heading">#</a></h3>
 <p>Persegi satuan adalah persegi dengan sisi 1 satuan dan sudut 90°. Titik-titik sudut awalnya adalah:</p>
 <p><span class="math notranslate nohighlight">\([
 (0,0), (1,0), (1,1), (0,1)
@@ -986,7 +984,7 @@ A = \begin{bmatrix}
 </ul>
 </section>
 <section id="contoh-transformasi-dan-visualisasi">
-<h4>2. Contoh Transformasi dan Visualisasi<a class="headerlink" href="#contoh-transformasi-dan-visualisasi" title="Link to this heading">#</a></h4>
+<h3>2. Contoh Transformasi dan Visualisasi<a class="headerlink" href="#contoh-transformasi-dan-visualisasi" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Refleksi terhadap sumbu-x:
 Persegi dibalik secara vertikal.</p></li>
@@ -998,9 +996,8 @@ Persegi jadi lebih lebar → menjadi persegi panjang dengan lebar 2 satuan.</p><
 Atas dari persegi digeser ke samping, membentuk paralelogram.</p></li>
 </ul>
 <p>Grafik memperlihatkan bagaimana titik-titik seperti ( (1,0) ), ( (0,1) ), dan ( (1,1) ) berpindah ke titik baru berdasarkan transformasi, dan bentuk baru dari persegi terbentuk dari koneksi titik-titik hasil transformasi tersebut.</p>
-</section>
-</section>
 <hr class="docutils" />
+</section>
 <section id="transformasi-bertahap-komposisi">
 <h3>Transformasi Bertahap (Komposisi)<a class="headerlink" href="#transformasi-bertahap-komposisi" title="Link to this heading">#</a></h3>
 <p>Jika dilakukan <strong>beberapa transformasi secara berurutan</strong>, grafik bisa menunjukkan langkah-langkah:</p>
@@ -1010,8 +1007,8 @@ Atas dari persegi digeser ke samping, membentuk paralelogram.</p></li>
 <li><p>Dan seterusnya</p></li>
 </ol>
 <p>Hal ini membantu untuk memahami efek kumulatif dari komposisi transformasi matriks.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="inti-dari-visualisasi">
 <h3>Inti dari Visualisasi<a class="headerlink" href="#inti-dari-visualisasi" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -1019,11 +1016,10 @@ Atas dari persegi digeser ke samping, membentuk paralelogram.</p></li>
 <li><p>Menjelaskan efek numerik dari matriks dalam cara <strong>yang intuitif</strong></p></li>
 <li><p>Menunjukkan bahwa matriks bekerja sebagai <strong>pemeta bentuk</strong> (mapper)</p></li>
 </ul>
-</section>
-</section>
 <hr class="docutils" />
+</section>
 <section id="soal-dan-jawaban">
-<h2>-&gt; SOAL DAN JAWABAN<a class="headerlink" href="#soal-dan-jawaban" title="Link to this heading">#</a></h2>
+<h3>-&gt; SOAL DAN JAWABAN<a class="headerlink" href="#soal-dan-jawaban" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Diketahu</p></li>
 </ul>
@@ -1089,9 +1085,8 @@ A = \begin{bmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{bmatrix}
 A = \begin{bmatrix} 1 &amp; -1 \\ 1 &amp; 1 \end{bmatrix}
 ]\)</span></p>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="transformasi-linier-diberikan-suatu-transformasi">
-<h1>1. Transformasi Linier Diberikan suatu transformasi.<a class="headerlink" href="#transformasi-linier-diberikan-suatu-transformasi" title="Link to this heading">#</a></h1>
+<section id="transformasi-linier-diberikan-suatu-transformasi">
+<h3>1. Transformasi Linier Diberikan suatu transformasi.<a class="headerlink" href="#transformasi-linier-diberikan-suatu-transformasi" title="Link to this heading">#</a></h3>
 <p><span class="math notranslate nohighlight">\([
 T : \mathbb{R}^2 \rightarrow \mathbb{R}^2,\quad T(v_1, v_2) = (v_1 + v_2, v_1)
 ]\)</span></p>
@@ -1135,9 +1130,8 @@ T(c\mathbf{v}) = cT(\mathbf{v})
 <p><span class="math notranslate nohighlight">\([
 T(v_1, v_2) = (v_1 + v_2, v_1) \text{ adalah transformasi linier.}
 ]\)</span></p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="dua-titik-matriks-reflenction">
-<h1>2.dua titik matriks reflenction.<a class="headerlink" href="#dua-titik-matriks-reflenction" title="Link to this heading">#</a></h1>
+<section id="dua-titik-matriks-reflenction">
+<h4>2.dua titik matriks reflenction.<a class="headerlink" href="#dua-titik-matriks-reflenction" title="Link to this heading">#</a></h4>
 <ol class="arabic simple">
 <li><p>Reflection</p></li>
 </ol>
@@ -1218,8 +1212,10 @@ T(v_1, v_2) = (v_1 + v_2, v_1) \text{ adalah transformasi linier.}
 (-5, 1) \rightarrow (5, -1)
 ]\)</span></p>
 <iframe scrolling="no" title="NO 5" src="https://www.geogebra.org/material/iframe/id/wjkvwkbc/width/1366/height/577/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="577px" style="border:0px;"> </iframe>
+</section>
+</section>
 <section id="eigenvalues-eigenvector">
-<h2>- <strong>Eigenvalues Eigenvector</strong><a class="headerlink" href="#eigenvalues-eigenvector" title="Link to this heading">#</a></h2>
+<h3>- Eigenvalues Eigenvector<a class="headerlink" href="#eigenvalues-eigenvector" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1433,11 +1429,11 @@ T(v_1, v_2) = (v_1 + v_2, v_1) \text{ adalah transformasi linier.}
 <img alt="_images/72a01a3fb2a0b0595b96af6b3488df11bca8ad83b5c2f1d3117d12ea9403b6c7.png" src="_images/72a01a3fb2a0b0595b96af6b3488df11bca8ad83b5c2f1d3117d12ea9403b6c7.png" />
 </div>
 </div>
+</section>
 <section id="definisi-eigenvalue-dan-eigenvector">
-<h3>1. <strong>Definisi Eigenvalue dan Eigenvector</strong><a class="headerlink" href="#definisi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h3>
+<h3>1. Definisi Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h3>
 <p><strong>Eigenvalue (nilai eigen)</strong> dan <strong>eigenvector (vektor eigen)</strong> adalah konsep penting dalam aljabar linear, khususnya dalam transformasi linier dan matriks.</p>
-<section id="definisi">
-<h4>Definisi:<a class="headerlink" href="#definisi" title="Link to this heading">#</a></h4>
+<p>Definisi:</p>
 <p>Misalkan <span class="math notranslate nohighlight">\(A\)</span> adalah matriks persegi berukuran <span class="math notranslate nohighlight">\(n \times n\)</span>. Sebuah <strong>eigenvector</strong> <span class="math notranslate nohighlight">\(\mathbf{v}\)</span> adalah vektor <strong>tak nol</strong> yang jika dikalikan dengan matriks <span class="math notranslate nohighlight">\(A\)</span>, hasilnya adalah vektor itu sendiri dikalikan dengan sebuah skalar <span class="math notranslate nohighlight">\(\lambda\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1447,14 +1443,12 @@ A\mathbf{v} = \lambda \mathbf{v}
 <li><p><span class="math notranslate nohighlight">\(\mathbf{v}\)</span> = eigenvector</p></li>
 <li><p><span class="math notranslate nohighlight">\(\lambda\)</span> = eigenvalue yang terkait dengan <span class="math notranslate nohighlight">\(\mathbf{v}\)</span></p></li>
 </ul>
-</section>
-</section>
 <hr class="docutils" />
-<section id="cara-mencari-eigenvalue-dan-eigenvector">
-<h3>2. <strong>Cara Mencari Eigenvalue dan Eigenvector</strong><a class="headerlink" href="#cara-mencari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h3>
+<ol class="arabic simple" start="2">
+<li><p><strong>Cara Mencari Eigenvalue dan Eigenvector</strong></p></li>
+</ol>
 <p>Langkah-langkah:</p>
-<section id="langkah-1-temukan-eigenvalue-lambda">
-<h4><strong>Langkah 1: Temukan Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span></strong><a class="headerlink" href="#langkah-1-temukan-eigenvalue-lambda" title="Link to this heading">#</a></h4>
+<p><strong>Langkah 1: Temukan Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span></strong></p>
 <p>Kita gunakan <strong>persamaan karakteristik</strong>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1465,7 +1459,6 @@ A\mathbf{v} = \lambda \mathbf{v}
 <li><p><span class="math notranslate nohighlight">\(\det\)</span> berarti determinan</p></li>
 </ul>
 <p>Hasil dari persamaan ini adalah <strong>nilai-nilai <span class="math notranslate nohighlight">\(\lambda\)</span></strong> (eigenvalue).</p>
-</section>
 <section id="langkah-2-temukan-eigenvector">
 <h4><strong>Langkah 2: Temukan Eigenvector</strong><a class="headerlink" href="#langkah-2-temukan-eigenvector" title="Link to this heading">#</a></h4>
 <p>Untuk setiap <span class="math notranslate nohighlight">\(\lambda\)</span> yang ditemukan:</p>
@@ -1473,17 +1466,14 @@ A\mathbf{v} = \lambda \mathbf{v}
 <li><p>Substitusi <span class="math notranslate nohighlight">\(\lambda\)</span> ke dalam <span class="math notranslate nohighlight">\((A - \lambda I)\mathbf{v} = 0\)</span></p></li>
 <li><p>Selesaikan sistem persamaan linear ini untuk mencari <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>, yaitu eigenvectornya.</p></li>
 </ol>
-</section>
 <hr class="docutils" />
-<section id="contoh-soal">
-<h4><strong>Contoh Soal:</strong><a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h4>
+<p><strong>Contoh Soal:</strong></p>
 <p>Misalkan</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
 \end{split}\]</div>
-<section id="cari-eigenvalue">
-<h5>Cari eigenvalue:<a class="headerlink" href="#cari-eigenvalue" title="Link to this heading">#</a></h5>
+<p>Cari eigenvalue:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \det(A - \lambda I) = \det \begin{bmatrix} 2-\lambda &amp; 1 \\ 1 &amp; 2-\lambda \end{bmatrix} = (2-\lambda)^2 - 1 = \lambda^2 - 4\lambda + 3
@@ -1493,9 +1483,7 @@ A = \begin{bmatrix} 2 &amp; 1 \\ 1 &amp; 2 \end{bmatrix}
 \[
 \lambda^2 - 4\lambda + 3 = 0 \Rightarrow \lambda = 1, 3
 \]</div>
-</section>
-<section id="cari-eigenvector-untuk-lambda-3">
-<h5>Cari eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span>:<a class="headerlink" href="#cari-eigenvector-untuk-lambda-3" title="Link to this heading">#</a></h5>
+<p>Cari eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 (A - 3I)\mathbf{v} = 0 \Rightarrow
@@ -1512,23 +1500,19 @@ x = y \Rightarrow \text{eigenvector: } \mathbf{v}_1 = \begin{bmatrix} 1 \\ 1 \en
 \[\begin{split}
 x = -y \Rightarrow \mathbf{v}_2 = \begin{bmatrix} 1 \\ -1 \end{bmatrix}
 \end{split}\]</div>
-</section>
-</section>
-</section>
 <hr class="docutils" />
-<section id="eigenvector-ortonormal-dan-menjadikannya-satu-kesatuan">
-<h3>3. <strong>Eigenvector Ortonormal dan Menjadikannya Satu Kesatuan</strong><a class="headerlink" href="#eigenvector-ortonormal-dan-menjadikannya-satu-kesatuan" title="Link to this heading">#</a></h3>
-<section id="ortonormal">
-<h4>Ortonormal:<a class="headerlink" href="#ortonormal" title="Link to this heading">#</a></h4>
+<ol class="arabic simple" start="3">
+<li><p><strong>Eigenvector Ortonormal dan Menjadikannya Satu Kesatuan</strong></p></li>
+</ol>
+<p>Ortonormal:</p>
 <p>Satu set vektor dikatakan <strong>ortonormal</strong> jika:</p>
 <ul class="simple">
 <li><p>Vektor-vektor tersebut <strong>saling tegak lurus</strong> (orthogonal)</p></li>
 <li><p>Setiap vektor memiliki <strong>norma = 1</strong> (normal)</p></li>
 <li></li>
 </ul>
-</section>
 <section id="menjadikan-eigenvector-ortonormal">
-<h4>Menjadikan Eigenvector Ortonormal:<a class="headerlink" href="#menjadikan-eigenvector-ortonormal" title="Link to this heading">#</a></h4>
+<h5>Menjadikan Eigenvector Ortonormal:<a class="headerlink" href="#menjadikan-eigenvector-ortonormal" title="Link to this heading">#</a></h5>
 <p>Gunakan <strong>normalisasi</strong> pada eigenvector:
 Misalnya <span class="math notranslate nohighlight">\(\mathbf{v} = \begin{bmatrix} 1 \\ 1 \end{bmatrix}\)</span></p>
 <p>Normanya:</p>
@@ -1540,13 +1524,13 @@ Misalnya <span class="math notranslate nohighlight">\(\mathbf{v} = \begin{bmatri
 <p>Jika kamu punya beberapa eigenvector yang <strong>orthogonal tapi belum bernorma 1</strong>, cukup normalisasi masing-masing.</p>
 </section>
 <section id="jika-tidak-orthogonal">
-<h4>Jika tidak orthogonal:<a class="headerlink" href="#jika-tidak-orthogonal" title="Link to this heading">#</a></h4>
+<h5>Jika tidak orthogonal:<a class="headerlink" href="#jika-tidak-orthogonal" title="Link to this heading">#</a></h5>
 <p>Gunakan <strong>Gram-Schmidt</strong> untuk membuatnya orthonormal (tapi itu topik lanjutan).</p>
 </section>
 </section>
 </section>
 <section id="matriks-3-x-3">
-<h2>- matriks 3 x 3<a class="headerlink" href="#matriks-3-x-3" title="Link to this heading">#</a></h2>
+<h3>- matriks 3 x 3<a class="headerlink" href="#matriks-3-x-3" title="Link to this heading">#</a></h3>
 <p><span class="math notranslate nohighlight">\([
 A = \begin{bmatrix}
 4 &amp; 1 &amp; 0 \\
@@ -1605,6 +1589,7 @@ Eigenvectors setelah dinormalisasi (ortonormal):
 </div>
 </div>
 </section>
+</section>
 <section id="id1">
 <h2>-<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p><span class="math notranslate nohighlight">\([
@@ -1660,6 +1645,181 @@ Eigenvectors setelah dinormalisasi (ortonormal):
 </div>
 </div>
 </div>
+<section id="perkalian-silang">
+<h3>- perkalian silang<a class="headerlink" href="#perkalian-silang" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{v} \times \mathbf{u} =
+\begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+v_1 &amp; v_2 &amp; v_3 \\
+u_1 &amp; u_2 &amp; u_3 \\
+\end{vmatrix}
+]\)</span></p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{vmatrix}
+v_2 &amp; v_3 \\
+u_2 &amp; u_3
+\end{vmatrix} \mathbf{i}
+-
+\begin{vmatrix}
+v_1 &amp; v_3 \\
+u_1 &amp; u_3
+\end{vmatrix} \mathbf{j}
++
+\begin{vmatrix}
+v_1 &amp; v_2 \\
+u_1 &amp; u_2
+\end{vmatrix} \mathbf{k}
+\end{split}\]</div>
+<p><span class="math notranslate nohighlight">\([
+= (v_2 u_3 - v_3 u_2)\mathbf{i} - (v_1 u_3 - v_3 u_1)\mathbf{j} + (v_1 u_2 - v_2 u_1)\mathbf{k}
+]\)</span></p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{v} \times \mathbf{u} =
+\begin{pmatrix}
+v_2 u_3 - v_3 u_2 \\
+-(v_1 u_3 - v_3 u_1) \\
+v_1 u_2 - v_2 u_1 \\
+\end{pmatrix}
+]\)</span></p>
+<p>\vspace{1em}
+\noindent
+Misal:</p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{u} = (1, 0, 0), \quad \mathbf{v} = (0, 1, 0)
+\)</span>]</p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{i} \times \mathbf{j} = \mathbf{k}
+]\)</span></p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{j} \times \mathbf{i} = -\mathbf{k}
+]\)</span></p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{i} \times \mathbf{j} = \mathbf{k}
+\quad \Rightarrow \quad
+\mathbf{i} \times \mathbf{j} = -(\mathbf{j} \times \mathbf{i})
+]\)</span></p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{i} &lt; \mathbf{j} \Rightarrow \mathbf{i} \times \mathbf{j} = \mathbf{k}
+]\)</span></p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{i} &gt; \mathbf{j} \Rightarrow \mathbf{i} \times \mathbf{j} = -\mathbf{k}
+]\)</span></p>
+<p><span class="math notranslate nohighlight">\([
+\mathbf{i} \times \mathbf{j} \neq \mathbf{j} \times \mathbf{i}
+]\)</span></p>
+<p>Contoh perhitungan:</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="begin-pmatrix-1-cdot-0-0-cdot-1-0-cdot-0-0-cdot-0-0-cdot-1-1-cdot-0-end-pmatrix">
+<h1>$[
+\begin{pmatrix}
+1 \cdot 0 - 0 \cdot 1 \
+0 \cdot 0 - 0 \cdot 0 \
+0 \cdot 1 - 1 \cdot 0 \
+\end{pmatrix}<a class="headerlink" href="#begin-pmatrix-1-cdot-0-0-cdot-1-0-cdot-0-0-cdot-0-0-cdot-1-1-cdot-0-end-pmatrix" title="Link to this heading">#</a></h1>
+<p>\begin{pmatrix}
+0 \
+0 \
+1 \
+\end{pmatrix}</p>
+<p>{k}
+]$</p>
+<section id="soal-jawaban">
+<h2>soal - jawaban<a class="headerlink" href="#soal-jawaban" title="Link to this heading">#</a></h2>
+<p>-&gt; Soal 1</p>
+<p>Tentukan luas jajaran genjang yang ditentukan oleh vektor</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad \vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}
+]\end{split}\]</div>
+<p>Luas jajaran genjang yang dibentuk oleh dua vektor dalam ruang dua dimensi diberikan oleh nilai mutlak dari determinan matriks yang dibentuk oleh kedua vektor:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+L = \left| \det \begin{bmatrix} u_1 &amp; v_1 \\ u_2 &amp; v_2 \end{bmatrix} \right|
+= \left| \det \begin{bmatrix} 1 &amp; 2 \\ 2 &amp; 1 \end{bmatrix} \right|
+= |(1)(1) - (2)(2)| = |1 - 4| = |-3| = \boxed{3}
+]\end{split}\]</div>
+<iframe scrolling="no" title="soal jawaban no 1" src="https://www.geogebra.org/material/iframe/id/xafyfkb2/width/1366/height/641/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="641px" style="border:0px;"> </iframe>
+<p>-&gt; Soal 2</p>
+<p>Tentukan luas jajaran genjang yang ditentukan oleh vektor</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad \vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}
+]\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+L = \left| \det \begin{bmatrix} 2 &amp; 0 \\ 0 &amp; 3 \end{bmatrix} \right|
+= |(2)(3) - (0)(0)| = |6 - 0| = \boxed{6}
+]\end{split}\]</div>
+<iframe scrolling="no" title="soal jawaban no 2" src="https://www.geogebra.org/material/iframe/id/teyrgsty/width/1366/height/641/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="641px" style="border:0px;"> </iframe>
+<p>Soal 3</p>
+<p>Tentukan luas segitiga dengan titik-titik sudut:
+$<span class="math notranslate nohighlight">\([
+A = (0, 0, 0), \quad B = (1, 3, -1), \quad C = (2, 1, 1)
+]\)</span>$</p>
+<p>Vektor:</p>
+<div class="math notranslate nohighlight">
+\[[
+\vec{AB} = (1, 3, -1), \quad \vec{AC} = (2, 1, 1)
+]\]</div>
+<p>Perkalian silang:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+\vec{AB} \times \vec{AC} =
+\begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+1 &amp; 3 &amp; -1 \\
+2 &amp; 1 &amp; 1
+\end{vmatrix}
+= 4\mathbf{i} - 3\mathbf{j} - 5\mathbf{k}
+]\end{split}\]</div>
+<p>Panjang vektor hasil:</p>
+<div class="math notranslate nohighlight">
+\[[
+|\vec{AB} \times \vec{AC}| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{50}
+]\]</div>
+<p>Luas segitiga:</p>
+<div class="math notranslate nohighlight">
+\[[
+L = \frac{1}{2} \cdot \sqrt{50} = \boxed{\frac{5\sqrt{2}}{1}}
+]\]</div>
+<iframe scrolling="no" title="soal jawaban no 3" src="https://www.geogebra.org/material/iframe/id/xbvgm3hf/width/1366/height/641/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="641px" style="border:0px;"> </iframe>
+<p>Soal 4</p>
+<p>Tentukan luas segitiga dengan titik-titik sudut:</p>
+<div class="math notranslate nohighlight">
+\[[
+A = (5, 2, -1), \quad B = (3, 6, 2), \quad C = (1, 0, 4)
+]\]</div>
+<p>Vektor:</p>
+<div class="math notranslate nohighlight">
+\[[
+\vec{AB} = (-2, 4, 3), \quad \vec{AC} = (-4, -2, 5)
+]\]</div>
+<p>Perkalian silang:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}[
+\vec{AB} \times \vec{AC} =
+\begin{vmatrix}
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+-2 &amp; 4 &amp; 3 \\
+-4 &amp; -2 &amp; 5
+\end{vmatrix}
+= 26\mathbf{i} - 2\mathbf{j} + 20\mathbf{k}
+]\end{split}\]</div>
+<p>Panjang:</p>
+<div class="math notranslate nohighlight">
+\[[
+|\vec{AB} \times \vec{AC}| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080}
+]\]</div>
+<p>Luas segitiga:</p>
+<div class="math notranslate nohighlight">
+\[[
+L = \frac{1}{2} \cdot \sqrt{1080} = \boxed{3\sqrt{30}}
+]\]</div>
+<iframe scrolling="no" title="soal jawaban no 4" src="https://www.geogebra.org/material/iframe/id/skk25gnq/width/1366/height/641/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1366px" height="641px" style="border:0px;"> </iframe>
 </section>
 </section>
 
@@ -1726,12 +1886,13 @@ Eigenvectors setelah dinormalisasi (ortonormal):
 +
 2
 𝑧</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-sistem-dengan-satu-solusi-unik"><strong>Contoh 1: Sistem dengan satu solusi unik</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#title-tugas-kal">title: TUGAS KAL</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-1-sistem-dengan-satu-solusi-unik"><strong>Contoh 1: Sistem dengan satu solusi unik</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-eliminasi-gauss"><strong>Langkah-langkah eliminasi Gauss:</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-sistem-dengan-solusi-tak-hingga"><strong>Contoh 2: Sistem dengan solusi tak hingga</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3-sistem-tanpa-solusi"><strong>Contoh 3: Sistem tanpa solusi</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-2-sistem-dengan-solusi-tak-hingga"><strong>Contoh 2: Sistem dengan solusi tak hingga</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-3-sistem-tanpa-solusi"><strong>Contoh 3: Sistem tanpa solusi</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-matriks-invers">Definisi matriks invers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syarat-matriks-memiliki-invers">Syarat Matriks Memiliki Invers:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-invers-matriks">Cara Mencari Invers Matriks:</a></li>
@@ -1745,45 +1906,41 @@ Eigenvectors setelah dinormalisasi (ortonormal):
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-terhadap-bidang-kartesius">Transformasi terhadap bidang kartesius</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-transformasi-matriks-menggunnakan-vektor">Visualisasi Transformasi Matriks Menggunnakan vektor</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-matriks-terhadap-sebuah-wilayah">Transformasi Matriks terhadap sebuah wilayah</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-grafik-transformasi-matriks">Penjelasan Grafik Transformasi Matriks</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-persegi-satuan">1. Transformasi Persegi Satuan</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-dan-visualisasi">2. Contoh Transformasi dan Visualisasi</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-grafik-transformasi-matriks">Penjelasan Grafik Transformasi Matriks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-persegi-satuan">1. Transformasi Persegi Satuan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-transformasi-dan-visualisasi">2. Contoh Transformasi dan Visualisasi</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-bertahap-komposisi">Transformasi Bertahap (Komposisi)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#inti-dari-visualisasi">Inti dari Visualisasi</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">-&gt; SOAL DAN JAWABAN</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linier-diberikan-suatu-transformasi">1. Transformasi Linier Diberikan suatu transformasi.</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#dua-titik-matriks-reflenction">2.dua titik matriks reflenction.</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-dan-jawaban">-&gt; SOAL DAN JAWABAN</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#transformasi-linier-diberikan-suatu-transformasi">1. Transformasi Linier Diberikan suatu transformasi.</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#dua-titik-matriks-reflenction">2.dua titik matriks reflenction.</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalues-eigenvector">- <strong>Eigenvalues Eigenvector</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">1. <strong>Definisi Eigenvalue dan Eigenvector</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi">Definisi:</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mencari-eigenvalue-dan-eigenvector">2. <strong>Cara Mencari Eigenvalue dan Eigenvector</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-temukan-eigenvalue-lambda"><strong>Langkah 1: Temukan Eigenvalue <span class="math notranslate nohighlight">\(\lambda\)</span></strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-temukan-eigenvector"><strong>Langkah 2: Temukan Eigenvector</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal"><strong>Contoh Soal:</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvalue">Cari eigenvalue:</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#cari-eigenvector-untuk-lambda-3">Cari eigenvector untuk <span class="math notranslate nohighlight">\(\lambda = 3\)</span>:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalues-eigenvector">- Eigenvalues Eigenvector</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">1. Definisi Eigenvalue dan Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-temukan-eigenvector"><strong>Langkah 2: Temukan Eigenvector</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#menjadikan-eigenvector-ortonormal">Menjadikan Eigenvector Ortonormal:</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-tidak-orthogonal">Jika tidak orthogonal:</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-ortonormal-dan-menjadikannya-satu-kesatuan">3. <strong>Eigenvector Ortonormal dan Menjadikannya Satu Kesatuan</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormal">Ortonormal:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#menjadikan-eigenvector-ortonormal">Menjadikan Eigenvector Ortonormal:</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#jika-tidak-orthogonal">Jika tidak orthogonal:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3-x-3">- matriks 3 x 3</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">-</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#perkalian-silang">- perkalian silang</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-3-x-3">- matriks 3 x 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">-</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#begin-pmatrix-1-cdot-0-0-cdot-1-0-cdot-0-0-cdot-0-0-cdot-1-1-cdot-0-end-pmatrix">$[
+\begin{pmatrix}
+1 \cdot 0 - 0 \cdot 1 \
+0 \cdot 0 - 0 \cdot 0 \
+0 \cdot 1 - 1 \cdot 0 \
+\end{pmatrix}</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-jawaban">soal - jawaban</a></li>
 </ul>
 </li>
 </ul>
